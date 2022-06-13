@@ -29,15 +29,32 @@
             display: inline-block;
             width: 45%;
         }
-		&__headline {}
-		&__text {}
-		&__price-block {}
-}
-.price-block {
+		&__headline {
+            margin-bottom: 20px;
+        }
+		&__text {
+            margin-bottom: 10px;
+        }
+		&__price-block {
+            margin-bottom: 10px;
+        }
+        &__button {
+            height: 40px;
+            font-size: 12px;
+        }
 }
 .real-price {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+    margin-right: 10px;
 }
 .old-price {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-decoration-line: line-through;
+    color: #F6762C;
+    opacity: 0.5;
 }
 
 

@@ -1,0 +1,44 @@
+.proposals-section {
+    padding: 150px 0 75px;
+}
+.proposal-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 65px 25px 65px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+		&_dairy-queen {
+            background-image: url("../img/proposals-section/dairy-queen.png");
+            margin-bottom: 30px;
+            justify-content: flex-end;
+        }
+		&_pizza-hut {
+            background-image: url("../img/proposals-section/pizza-hut.png");
+            margin-bottom: 30px;
+        }
+		&_burger-king {
+            background-image: url("../img/proposals-section/burger-king.png");
+            justify-content: flex-end;
+        }
+		&_papa-john {
+            background-image: url("../img/proposals-section/papa-johns.png");
+        }
+		&__wrap {
+            display: inline-block;
+            width: 45%;
+        }
+		&__headline {}
+		&__text {}
+		&__price-block {}
+}
+.price-block {
+}
+.real-price {
+}
+.old-price {
+}
+
+
+

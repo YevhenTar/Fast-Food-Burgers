@@ -1,0 +1,45 @@
+.main-proposal-section {
+    padding: 70px 0;
+    background-color: #312F30;
+}
+.main-dish-image {
+}
+.text-block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		&__headline {
+            margin-bottom: 25px;
+        }
+		&__text {
+            margin-bottom: 15px;
+        }
+}
+.price-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+		&__real-price {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.1em;
+            color: #F6762C;
+            opacity: 1;
+            margin-right: 6px;
+        }
+		&__old-price {
+            font-weight: 500;
+            color: #F6762C;
+            opacity: 0.5;
+            letter-spacing: 0.1em;
+            text-decoration-line: line-through;
+            padding: 2px;
+        }
+}
+.text-block__price-block{
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,27 @@
+.home-section {
+    height: 100vh;
+    background-image: url("../img/home-section/burger-bg.jpg");
+    background-size: cover;
+}
+.home-block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		&__headline {
+            font-size: 14px;
+            line-height: 1.1;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+		&__subheadline {
+            font-size: 57px;
+            margin-bottom: 40px;
+        }
+		&__text {
+            font-size: 18px;
+            margin-bottom: 42px;
+        }
+}
+
+

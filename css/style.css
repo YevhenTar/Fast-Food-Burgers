@@ -102,6 +102,10 @@ h5 {
   position: fixed;
   top: 0;
   z-index: 10;
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .main-header__wrap {
@@ -119,6 +123,9 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .logo-link {
@@ -177,6 +184,14 @@ h5 {
 
 .menu-list__link:hover {
   opacity: 1;
+}
+
+.main-header.stickytop {
+  background-color: #1976d2;
+}
+
+.main-header.stickytop .main-header__wrap {
+  height: 75px;
 }
 
 .home-section {
@@ -457,13 +472,41 @@ h5 {
 }
 
 .picture-wrap__image_man-one {
-  top: 100px;
-  left: 60px;
+  top: 273px;
+  left: 195px;
 }
 
 .picture-wrap__image_man-two {
-  top: 50px;
-  left: 20px;
+  top: 36px;
+  left: 131px;
+}
+
+.text-wrap {
+  text-align: center;
+  padding-top: 95px;
+  width: 58%;
+  margin: 0 auto;
+}
+
+.text-wrap__quotes {
+  margin-bottom: 40px;
+}
+
+.text-wrap__text {
+  margin-bottom: 30px;
+}
+
+.text-wrap__name {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 24px;
+  opacity: 1;
+}
+
+.text-wrap__company {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .download-section {

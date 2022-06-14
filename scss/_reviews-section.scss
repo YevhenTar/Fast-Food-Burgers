@@ -32,19 +32,36 @@
                 left: 420px;
             }
 			&_man-one {
-                top: 100px;
-                left: 60px;
+                top: 273px;
+                left: 195px;
             }
 			&_man-two {
-                top: 50px;
-                left: 20px;
+                top: 36px;
+                left: 131px;
             }
 		}
 }
 .text-wrap {
-		&__quotes {}
-		&__text {}
-		&__name {}
-		&__company {}
+    text-align: center;
+    padding-top: 95px;
+    width: 58%;
+    margin: 0 auto;
+		&__quotes {
+            margin-bottom: 40px;
+        }
+		&__text {
+            margin-bottom: 30px;
+        }
+		&__name {
+            margin-bottom: 2px;
+            font-weight: 500;
+            font-size: 24px;
+            opacity: 1;
+        }
+		&__company {
+            font-weight: 500;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
 }
 

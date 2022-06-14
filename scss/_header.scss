@@ -3,12 +3,15 @@
     position: fixed;
     top: 0;
     z-index: 10;
+    background-color: transparent;
+    transition: all 0.3s;
     &__wrap {
         height: 100px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        transition: all 0.3s;
     }
 }
 .logo-link {
@@ -42,6 +45,13 @@
         }
     }
 }
+.main-header.stickytop{
+    background-color: #1976d2;
+    & .main-header__wrap{
+        height: 75px;
+    }
+}
+
 
 
 

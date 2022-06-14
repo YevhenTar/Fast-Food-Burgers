@@ -404,6 +404,68 @@ h5 {
   padding: 75px 0 195px;
 }
 
+.picture-wrap {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picture-wrap__image {
+  position: absolute;
+}
+
+.picture-wrap__image_big-circle {
+  position: relative;
+}
+
+.picture-wrap__image_small-circle {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.picture-wrap__image_lady-one {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.picture-wrap__image_lady-two {
+  top: -10px;
+  left: 370px;
+}
+
+.picture-wrap__image_lady-three {
+  top: 220px;
+  left: 420px;
+}
+
+.picture-wrap__image_man-one {
+  top: 100px;
+  left: 60px;
+}
+
+.picture-wrap__image_man-two {
+  top: 50px;
+  left: 20px;
+}
+
 .download-section {
   background-color: #312F30;
 }
@@ -466,8 +528,8 @@ h5 {
   content: url("../img/footer/envelope.svg");
   position: absolute;
   height: 11px;
-  left: 0;
-  top: 50%;
+  left: 3px;
+  top: 46%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -476,7 +538,7 @@ h5 {
 .contacts-block__link_site::before {
   content: url("../img/footer/planet.svg");
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -496,6 +558,20 @@ h5 {
 
 .footer-menu__headline {
   margin-bottom: 15px;
+}
+
+.footer-menu__list-item {
+  margin-bottom: 15px;
+}
+
+.footer-menu__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-menu__link {
+  font-size: 12px;
+  line-height: 1.2;
+  opacity: 0.8;
 }
 
 .social-media__headline {

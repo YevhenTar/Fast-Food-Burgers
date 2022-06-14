@@ -28,14 +28,14 @@
 				content: url("../img/footer/envelope.svg");
 				position: absolute;
 				height: 11px;
-				left: 0;
-				top: 50%;
+				left: 3px;
+				top: 46%;
 				transform: translateY(-50%);
 			}
 			&_site::before{
 				content: url("../img/footer/planet.svg");
 				position: absolute;
-				left: 0;
+				left: 3px;
 				top: 50%;
 				transform: translateY(-50%);
 				height: 12px;
@@ -51,8 +51,17 @@
 			margin-bottom: 15px;
 		}
 		&__list {}
-		&__list-item {}
-		&__link {}
+		&__list-item {
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&__link {
+			font-size: 12px;
+			line-height: 1.2;
+			opacity: 0.8;
+		}
 }
 .social-media {
 		&__headline {

@@ -1,3 +1,50 @@
 .reviews-section{
     padding: 75px 0 195px;
 }
+.picture-wrap {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+		&__image {
+            position: absolute;
+			&_big-circle {
+                position: relative;
+            }
+			&_small-circle {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+			&_lady-one {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+			&_lady-two {
+                top: -10px;
+                left: 370px;
+            }
+			&_lady-three {
+                top: 220px;
+                left: 420px;
+            }
+			&_man-one {
+                top: 100px;
+                left: 60px;
+            }
+			&_man-two {
+                top: 50px;
+                left: 20px;
+            }
+		}
+}
+.text-wrap {
+		&__quotes {}
+		&__text {}
+		&__name {}
+		&__company {}
+}
+

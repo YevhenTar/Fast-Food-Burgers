@@ -1,5 +1,8 @@
 .proposals-section {
     padding: 150px 0 75px;
+    @media(max-width: 1199.98px){
+        padding: 85px 0 65px;
+    }
 }
 .proposal-block {
     display: flex;
@@ -9,6 +12,9 @@
     padding: 65px 25px 65px 50px;
     background-repeat: no-repeat;
     background-size: cover;
+    @media(max-width: 1199.98px){
+        padding: 45px 20px 45px 45px;
+    }
 		&_dairy-queen {
             background-image: url("../img/proposals-section/dairy-queen.png");
             margin-bottom: 30px;
@@ -21,6 +27,9 @@
 		&_burger-king {
             background-image: url("../img/proposals-section/burger-king.png");
             justify-content: flex-end;
+            @media(max-width: 991.98px){
+                margin-bottom: 30px;
+            }
         }
 		&_papa-john {
             background-image: url("../img/proposals-section/papa-johns.png");
@@ -28,12 +37,22 @@
 		&__wrap {
             display: inline-block;
             width: 45%;
+            @media(max-width: 1199.98px){
+                width: 50%;
+            }
         }
 		&__headline {
             margin-bottom: 20px;
+            @media(max-width: 1199.98px){
+                margin-bottom: 10px;
+            }
         }
 		&__text {
             margin-bottom: 10px;
+            @media(max-width: 1199.98px){
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
         }
 		&__price-block {
             margin-bottom: 10px;

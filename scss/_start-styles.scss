@@ -1,3 +1,4 @@
+@import "_variables";
 html {
     height: 100vh;
     box-sizing: border-box;
@@ -60,7 +61,7 @@ h5{
 .button {
     width: fit-content;
     height: 50px;
-    background-color: #F6762C;
+    background-color: $button-color;
     font-weight: 500;
     border-radius: 5px;
     display: inline-flex;
@@ -70,3 +71,4 @@ h5{
     text-transform: uppercase;
     padding: 0 35px;
 }
+

@@ -24,20 +24,20 @@
                 transform: translate(-50%, -50%);
             }
 			&_lady-two {
-                top: -10px;
-                left: 370px;
+                top: calc(50% - 186px);
+                left: calc(50% + 54px);
             }
 			&_lady-three {
-                top: 220px;
-                left: 420px;
+                top: calc(50% + 45px);
+                left: calc(50% + 105px);
             }
 			&_man-one {
-                top: 273px;
-                left: 195px;
+                top: calc(50% + 100px);
+                left: calc(50% - 127px);
             }
 			&_man-two {
-                top: 36px;
-                left: 131px;
+                top: calc(50% - 135px);
+                left: calc(50% - 190px);
             }
 		}
 }

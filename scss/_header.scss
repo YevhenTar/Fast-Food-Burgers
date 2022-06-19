@@ -117,25 +117,23 @@
         width: 100%;
         background-color: white;
         display: block;
-        // // position: absolute;
-        // left: 50%;
+        position: absolute;
         animation-timing-function: ease-in-out;
         animation-play-state: paused;
         animation-duration: .4s;
         animation-fill-mode: both;
 
         &:nth-child(1) {
-            // top: 25%;
             width: 36px;
-            // transform: translate(-50%, 0%);
+            top: 0%;
         }
         &:nth-child(2) {
-            // top: 50%;
-            // transform: translate(-50%, -50%);
+            top: 50%;
+            transform: translateY(-50%);
         }
         &:nth-child(3) {
             width: 36px;
-            // bottom: 25%;
+            bottom: 0%;
             // transform: translate(-50%, 0%);
         }
     }
@@ -163,27 +161,27 @@
 
 @keyframes default-top {
     50%  {
-        top:50%;
-        transform: translate(-50%, -50%) rotate(0);
+        top:45%;
+        transform:  rotate(0);
     }
     100% {
-        top:50%;
-        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 100%;
+        top:45%;
+        transform:  rotate(-45deg);
     }
 }
 @keyframes default-middle {
     50%, 100% {visibility:hidden;}
 }
 @keyframes default-bottom {
-    0%   {}
-    25%  {}
     50%  {
-        bottom:50%;
-        transform: translate(-50%, -50%) rotate(0deg);
+        bottom:42.5%;
+        transform:  rotate(0deg);
     }
     100% {
-        bottom:50%;
-        transform: translate(-50%, 50%) rotate(45deg);
+        width: 100%;
+        bottom:42.5%;
+        transform: rotate(45deg);
     }
 }
 

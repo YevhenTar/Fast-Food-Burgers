@@ -4,6 +4,15 @@
         padding: 0 0 100px;
     }
 }
+.picture-block{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.8s, transform 0.9s;
+    &.new-animate{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .picture-wrap {
     position: relative;
     height: 100%;
@@ -106,6 +115,14 @@
     padding-top: 95px;
     width: 58%;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.8s, transform 0.9s;
+    transition-delay: 0.4s;
+    &.new-animate{
+        opacity: 1;
+        transform: translateY(0);
+    }
     @media(max-width: 575.98px){
         padding-top: 55px;
         width: 80%;

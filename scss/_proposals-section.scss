@@ -12,6 +12,12 @@
     padding: 65px 25px 65px 50px;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0;
+    transition: opacity 0.8s, transform 0.9s;
+    &.new-animate{
+        opacity: 1;
+        transform: translateX(0);
+    }
     @media(max-width: 1199.98px){
         padding: 45px 20px 45px 45px;
     }
@@ -22,20 +28,28 @@
             background-image: url("../img/proposals-section/dairy-queen.png");
             margin-bottom: 30px;
             justify-content: flex-end;
+            transform: translateX(-200px);
+            transition-delay: 0.3s;
         }
 		&_pizza-hut {
             background-image: url("../img/proposals-section/pizza-hut.png");
             margin-bottom: 30px;
+            transform: translateX(200px);
+            transition-delay: 0.6s;
         }
 		&_burger-king {
             background-image: url("../img/proposals-section/burger-king.png");
             justify-content: flex-end;
+            transform: translateX(-200px);
+            transition-delay: 0.9s;
             @media(max-width: 991.98px){
                 margin-bottom: 30px;
             }
         }
 		&_papa-john {
             background-image: url("../img/proposals-section/papa-johns.png");
+            transform: translateX(200px);
+            transition-delay: 1.2s;
         }
 		&__wrap {
             display: inline-block;

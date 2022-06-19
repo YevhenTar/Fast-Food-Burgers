@@ -4,6 +4,7 @@
     top: 0;
     z-index: 100;
     background-color: transparent;
+    opacity: 0;
     transition: all 0.3s;
     &__wrap {
         height: 100px;
@@ -13,9 +14,6 @@
         align-items: center;
         transition: all 0.3s;
         @media(max-width: 991.98px){
-            height: 75px;
-        }
-        @media (max-width: 575.98px){
             height: 60px;
         }
     }
@@ -31,6 +29,9 @@
             border-radius: 35px;
         }
     }
+}
+.loaded .main-header{
+    opacity: 1;
 }
 .logo-link {
     display: flex;

@@ -11,6 +11,10 @@
     @media (max-width: 991.98px){
         margin-bottom: 10px;
     }
+    @media (max-width: 575.98px){
+        transform: scale(0.72);
+        margin-bottom: -25px;
+    }
 }
 .info-wrap{
     display: flex;

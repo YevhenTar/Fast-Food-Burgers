@@ -58,10 +58,17 @@ h4{
 h5{
     font-size: 16px;
 }
+.main-content {
+    overflow: hidden;
+}
+.body-blocked{
+    overflow: hidden;
+}
 .button {
     width: fit-content;
     height: 50px;
     background-color: $button-color;
+    border: 1.5px solid $button-color;
     font-weight: 500;
     border-radius: 5px;
     display: inline-flex;
@@ -70,5 +77,81 @@ h5{
     align-items: center;
     text-transform: uppercase;
     padding: 0 35px;
+    transition: all 0.3s;
+    &:hover{
+        color: $button-color;
+        background-color: transparent;
+    }
 }
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #0B0E11;
+    z-index: 1000;
+    &__wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.pl1{
+    display: flex;
+	margin: 1.5em;
+	width: 6em;
+	height: 6em;
+	justify-content: space-around;
+	&__a, &__b, &__c{
+		border-radius: 50%;
+		width: 1em;
+		height: 1em;
+		transform-origin: 50% 100%;
+        animation: bounce1 1s linear infinite;
+    }
+}
+
+.pl1{
+	&__a{
+		background-color: #F6762C;
+    }
+	&__b{
+		background-color: #F6762C;
+		animation-delay: 0.1s;
+    }
+	&__c{
+		background-color: #F6762C;
+		animation-delay: 0.2s;
+    }
+}
+@keyframes bounce1{
+	from, to{
+		transform: translateY(0) scale(1,1);
+		animation-timing-function: ease-in;
+    }    
+	45%{
+		transform: translateY(5em) scale(1,1);
+		animation-timing-function: linear;
+    }
+	50%{
+		transform: translateY(5em) scale(1.5,0.5);
+		animation-timing-function: linear;
+    }
+	55%{
+		transform: translateY(5em) scale(1,1);
+		animation-timing-function: ease-out;
+    }
+}
+.loaded_hiding .preloader {
+    transition: 0.6s opacity;
+    opacity: 0;
+}
+.loaded .preloader {
+    display: none;
+}
+
 

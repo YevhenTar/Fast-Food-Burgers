@@ -45,6 +45,7 @@
             }
         }
 		&__text {
+            width: 92%;
             font-size: 18px;
             margin-bottom: 42px;
             opacity: 0;
@@ -57,6 +58,9 @@
             }
             @media(max-width: 767.98px){
                 font-size: 14px;
+            }
+            @media(max-width: 575.98px){
+                width: 100%;
             }
         }
         &__button-wrap{

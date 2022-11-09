@@ -336,8 +336,20 @@
             <div class="popup__body">
                 <div class="popup__content">
                     <a href="#" class="popup__close close-popup"><img src="img/body/close-icon.png" width="22" height="22" alt="close-cross" class="popup__close-image"></a>
+                    <form action="" method="post" name="order-form" class="popup__form">
+                        <div class="order-form__name-block">
+                            <label for="name-field" class="order-form__name-label">Your name</label>
+                            <input type="text" id="name-field" class="order-form__name-input" required>
+                        </div>
+                        <div class="order-form__phone-block">
+                            <label for="phone-field" class="order-form__phone-label">Your phone</label>
+                            <input type="text" class="order-form__phone-input" id="phone-field" required>
+                        </div>
+                        <button type="submit" class="order-form__button button">Send</button>
+                    </form>
+                    <!-- <a href="#" class="popup__close close-popup"><img src="img/body/close-icon.png" width="22" height="22" alt="close-cross" class="popup__close-image"></a>
                     <h3 class="popup__title">This is modal window #1</h3>
-                    <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio, aliquid assumenda ea exercitationem est rerum quidem deserunt atque similique?</p>
+                    <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio, aliquid assumenda ea exercitationem est rerum quidem deserunt atque similique?</p> -->
                 </div>
             </div>
         </div>
@@ -345,8 +357,15 @@
             <div class="popup__body">
                 <div class="popup__content">
                     <a href="#" class="popup__close close-popup"><img src="img/body/close-icon.png" width="22" height="22" alt="close-cross" class="popup__close-image"></a>
-                    <h3 class="popup__title">This is modal window #2</h3>
-                    <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio, aliquid assumenda ea exercitationem est rerum quidem deserunt atque similique?</p>
+                    <form action="" method="post" name="download-form" class="popup__form">
+                        <div class="download-form__email-block">
+                            <label for="email-field" class="download-form__email-label">Your e-mail</label>
+                            <input type="email" id="email-field" class="download-form__email-input" required>
+                        </div>
+                        <button type="submit" class="download-form__button button">Send</button>
+                    </form>
+                    <!-- <h3 class="popup__title">This is modal window #2</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio, aliquid assumenda ea exercitationem est rerum quidem deserunt atque similique?</p> -->
                 </div>
             </div>
         </div>

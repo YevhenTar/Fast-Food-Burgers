@@ -144,6 +144,8 @@ function bodyLock() {
             el.style.paddingRight = lockPaddingValue;
         }
     }
+    const header = document.querySelector(".main-header");
+    header.style.innerWidth = 100 + '%' - lockPaddingValue;
     body.style.paddingRight = lockPaddingValue;
     body.classList.add('lock');
 

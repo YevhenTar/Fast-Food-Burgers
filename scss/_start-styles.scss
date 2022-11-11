@@ -188,7 +188,7 @@ h5{
     color: #000;
     max-width: 800px;
     border-radius: 16px;
-    padding: 30px;
+    padding: 45px 30px 30px;
     position: relative;
     transition: all 0.6s;
     opacity: 0;
@@ -205,6 +205,85 @@ h5{
     font-size: 40px;
     margin-bottom: 0.8em;
 }
+.popup {
+    &__form {
+        position: relative;
+    }
+}
+.order-form {
+    &__block {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: 320px;
+    }
+    &__name-label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    &__name-input {
+        height: 35px;
+        outline: none;
+        padding: 0 20px;
+        border: 1px solid black;
+        background-color: silver;
+    }
+    &__phone-label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    &__phone-input {
+        height: 35px;
+        outline: none;
+        padding: 0 20px;
+        border: 1px solid black;
+        background-color: silver;
+    }
+    &__button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-weight: 500;
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 1.1;
+    }
+}
+.download-form {
+    &__block {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: 320px;
+    }
+    &__email-label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    &__email-input {
+        height: 35px;
+        outline: none;
+        padding: 0 20px;
+        border: 1px solid black;
+        background-color: silver;
+    }
+    &__button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-weight: 500;
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 1.1;
+    }
+}
+
+
+
+
+
 
 
 

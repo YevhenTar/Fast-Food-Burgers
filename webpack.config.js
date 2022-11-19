@@ -6,7 +6,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './js/script.js'
+        main: './index.js'
         // ['scroll-out']: './src/js/scroll-out.js'
     },
     output: {
@@ -20,5 +20,13 @@ module.exports = {
             scriptLoading: 'blocking'
         }),
         new CleanWebpackPlugin()
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
+    }
 }

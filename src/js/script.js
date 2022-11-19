@@ -1,5 +1,6 @@
 import "../css/bootstrap-grid.min.css";
 import "../scss/style.scss";
+import * as $ from 'jquery';
 
 window.onload = function () {
     document.body.classList.add('loaded_hiding');

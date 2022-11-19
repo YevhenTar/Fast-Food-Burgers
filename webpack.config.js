@@ -6,9 +6,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './js/script.js'
-        // script: './js/script.js'
-        // ['scroll-out']: './src/js/scroll-out.js'
+        main: './js/script.js',
+        ['scroll-out']: './js/scroll-out.js'
     },
     output: {
         filename: '[name].js',

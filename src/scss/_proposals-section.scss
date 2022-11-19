@@ -25,20 +25,20 @@
         padding: 20px 10px 20px 20px;
     }
 		&_dairy-queen {
-            background-image: url("../img/proposals-section/dairy-queen.png");
+            background-image: url("../assets/img/proposals-section/dairy-queen.png");
             margin-bottom: 30px;
             justify-content: flex-end;
             transform: translateX(-200px);
             transition-delay: 0.3s;
         }
 		&_pizza-hut {
-            background-image: url("../img/proposals-section/pizza-hut.png");
+            background-image: url("../assets/img/proposals-section/pizza-hut.png");
             margin-bottom: 30px;
             transform: translateX(200px);
             transition-delay: 0.6s;
         }
 		&_burger-king {
-            background-image: url("../img/proposals-section/burger-king.png");
+            background-image: url("../assets/img/proposals-section/burger-king.png");
             justify-content: flex-end;
             transform: translateX(-200px);
             transition-delay: 0.9s;
@@ -47,7 +47,7 @@
             }
         }
 		&_papa-john {
-            background-image: url("../img/proposals-section/papa-johns.png");
+            background-image: url("../assets/img/proposals-section/papa-johns.png");
             transform: translateX(200px);
             transition-delay: 1.2s;
         }

@@ -44,7 +44,7 @@
 				margin-bottom: 0;
 			}
 			&_email::before{
-				content: url("../img/footer/envelope.svg");
+				content: url("../assets/img/footer/envelope.svg");
 				position: absolute;
 				height: 11px;
 				left: 3px;
@@ -52,7 +52,7 @@
 				transform: translateY(-50%);
 			}
 			&_site::before{
-				content: url("../img/footer/planet.svg");
+				content: url("../assets/img/footer/planet.svg");
 				position: absolute;
 				left: 3px;
 				top: 50%;

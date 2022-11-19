@@ -6,7 +6,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './index.js'
+        main: './js/script.js'
+        // script: './js/script.js'
         // ['scroll-out']: './src/js/scroll-out.js'
     },
     output: {
@@ -24,8 +25,20 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/,
+                loader: 'html-loader'
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.s[ac]ss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                type: 'asset/resource'
             }
         ]
     }

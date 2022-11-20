@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.56.1",

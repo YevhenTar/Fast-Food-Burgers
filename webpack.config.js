@@ -15,9 +15,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './index.html'
             // favicon: './src/assets/img/favicon/favicon-16x16.png',
-            scriptLoading: 'blocking'
+            // scriptLoading: 'blocking'
         }),
         new CleanWebpackPlugin()
     ],
